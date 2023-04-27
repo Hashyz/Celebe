@@ -130,7 +130,6 @@ class Celebe:
     
 obj = Celebe()
 refreshToken = input("refreshToken : ")
-#refreshToken = "APZUo0R5RQmEDi74DpcsJcLHc-e87_26O-gxLFj-cpiQ-Wuz5vvLCDU5CpDp12m_mnZvLSr7ildPnXSbZmabrZww7863owQl2rkYhzzbph59_v3K6P9TV2WcHU7g7sLQ6cNk1qQfGpImIQ56NuTYYzBFW6YYamg5oJls7Z8FcgbF73xTCGtMnqbVzGdJbWppqrupRub87Np7RpCyfGDpv92X_T0iKs0W0OiGipikHUgdxT38XQ-QMbDhVGaHnLQgSZF-1FDykSt3zqKreukVcyX42bg8SMPdiwdNfXmtuo9VJ9rn2M7uU56eTeqM1ZNo2WrxjtADFh-6Rto6osyhswdLQ6q9l7YY_wk7ANOPwu9uo--SJPRRlCYvLhAG_E1wyTTnKgP_Uru_RhusdrBFabuJ-vihd4TzxQ"
 obj.getToken(refreshToken)
 obj.getUser()
 obj.login()
