@@ -129,16 +129,29 @@ class Celebe:
     return 1
     
 obj = Celebe()
-refreshToken = input("refreshToken : ")
-obj.getToken(refreshToken)
+while 1:
+  k = input("Refresh Token (r) or Token (t) : ").lower()
+  if k == 'r':
+    refreshToken = input("Refresh Token : ")
+    obj.getToken(refreshToken)
+    break
+  elif k == 't':
+    r = input("Token : ")
+    obj.setToken(r)
+    break
+  else:
+    print("Just Choose r or t.")
+
 obj.getUser()
 obj.login()
 
-opt = input("Option (a) - Profile id - \nOption (b) - View All Recommend Video -\nInput here : ")
-
-if opt == 'a':
-  obj.viewVideo(input("Profile ID Here : "))#382844
-elif opt == 'b':
-  obj.getRecommend()
-else:
-  print("Just Choose a or b.")
+while 1:
+  opt = input("Option (a) - Profile id - \nOption (b) - View All Recommend Video -\nInput here : ").lower()
+  if opt == 'a':
+    obj.viewVideo(input("Profile ID Here : "))#382844
+    # break
+  elif opt == 'b':
+    obj.getRecommend()
+    # break
+  else:
+    print("Just Choose a or b.")
